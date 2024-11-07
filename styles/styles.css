@@ -28,3 +28,15 @@ body {
 .container {
     height: 100vh;
 }
+
+.botao_assinar_promo {
+    border-radius: 8px;
+    background: var(--azul-button);
+    display: block;
+    width: 512px;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 16px;
+    color: var(--branco-principal)
+  
+}
