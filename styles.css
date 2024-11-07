@@ -13,8 +13,20 @@
 
 body {
     background: var(--preto-fundo);
+    color: var(--branco-principal);
+
 }
 
-h1 {
-    color: var(--branco-principal);
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.imagem_rostos {
+width: 1440px;
+height: 680px;
+flex-shrink: 0;
 }
