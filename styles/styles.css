@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --preto-fundo: #00030C;
     --branco-principal: #FFF;
     --azul-button: #167BF7;
     --cinza-secundario: #C0C0C0;
     --gelo-secundario: #F9F9F9;
+
+    --fonte-primaria: 'Inter', sans-serif;
 }
 
 *{
@@ -18,25 +22,71 @@ body {
 }
 
 .apresentacao {
+    margin-top: 125px;
     background-image: url(/img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 16px;
-   
+    padding: 1rem;
+    
+
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1,75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .botao_assinar_promo {
     border-radius: 8px;
     background: var(--azul-button);
     display: block;
-    width: 512px;
+    text-align: center;
+    width: 480px;
     padding: 1rem;
     align-items: flex-start;
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    text-decoration: none;
     gap: 16px;
-    color: var(--branco-principal)
-  
+    
+}
+.botao_assinar_sem_promo {
+    background-color: transparent;
+    width: 480px;
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    font-style: normal;
+    display: block;
+    padding: 16px;
+    align-items: flex-start;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--branco-principal);
+    gap: 16px;
+}
+.aviso {
+    color: var(--gelo-secundario);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 16px;
+    
 }
