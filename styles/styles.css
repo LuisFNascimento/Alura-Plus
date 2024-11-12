@@ -18,16 +18,19 @@
 body {
     background: var(--preto-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
 
 }
 
-.apresentacao {
+.principal {
     margin-top: 125px;
     background-image: url(/img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 1rem;
-    
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -35,58 +38,61 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    font-size: 26px;
 
 }
-
-.container__titulo {
-    font-family: var(--fonte-primaria);
-    font-size: 1,75rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.botao_assinar_promo {
-    border-radius: 8px;
-    background: var(--azul-button);
-    display: block;
-    text-align: center;
-    width: 480px;
-    padding: 1rem;
-    align-items: flex-start;
-    color: var(--branco-principal);
-    font-size: 16px;
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    text-decoration: none;
-    gap: 16px;
+.container__botao {
+   background-color: var(--azul-button);
+   border-radius: 5px;
+   padding: 1em;
+   color: var(--branco-principal);
+   display: block;
+   text-decoration: none;
+   margin-bottom: 1em;
     
 }
-.botao_assinar_sem_promo {
-    background-color: transparent;
-    width: 480px;
-    color: var(--branco-principal);
-    font-size: 16px;
-    font-weight: 400;
-    font-family: var(--fonte-primaria);
-    font-style: normal;
-    display: block;
-    padding: 16px;
-    align-items: flex-start;
-    border-radius: 8px;
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid var(--branco-principal);
-    gap: 16px;
+.botao__secundario {
+ background-color: transparent;
+ border: 2px solid var(--branco-principal);
+    
 }
-.aviso {
+.container__aviso {
     color: var(--gelo-secundario);
-    text-align: center;
     font-family: var(--fonte-primaria);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    gap: 16px;
+    font-size: 16px; 
     
+}
+.container__titulo {
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
+    
+}
+
+.container__caixa {
+    margin: 0 6em;
+
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
 }
